@@ -28,7 +28,7 @@
     "typescript": "^2.7.1"
   },
   "scripts": {
-    "compile": "tsc && node app.js",
+    "compile": "tsc --skipLibCheck && node app.js",
     "dev": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"npm run compile\""
   },
   "main": "app.js",
