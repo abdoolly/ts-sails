@@ -110,3 +110,14 @@ nbproject
 .idea
 .node_history
 package-lock.json
+
+
+api/controllers/**/*.js
+api/controllers/**/*.js.map
+
+api/decorators/**/*.js
+api/decorators/**/*.js.map
+
+database/migrations/**/*.js
+database/migrations/**/*.js.map
+
