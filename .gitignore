@@ -135,3 +135,7 @@ api/responses/**/*.js.map
 
 api/policies/**/*.js
 api/policies/**/*.js.map
+
+utilities/bootstrap/**/*.js
+utilities/bootstrap/**/*.js.map
+
