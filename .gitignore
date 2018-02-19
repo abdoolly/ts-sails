@@ -121,3 +121,17 @@ api/decorators/**/*.js.map
 database/migrations/**/*.js
 database/migrations/**/*.js.map
 
+database/seeders/**/*.js
+database/seeders/**/*.js.map
+
+api/models/**/*.js
+api/models/**/*.js.map
+
+api/services/**/*.js
+api/services/**/*.js.map
+
+api/responses/**/*.js
+api/responses/**/*.js.map
+
+api/policies/**/*.js
+api/policies/**/*.js.map
