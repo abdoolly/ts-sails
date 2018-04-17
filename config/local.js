@@ -81,7 +81,7 @@ module.exports = {
    ***************************************************************************/
 
   // environment: process.env.NODE_ENV || 'development'
-  port: '1339'
+  port: '1337'
 
 };
 
