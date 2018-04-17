@@ -11,6 +11,7 @@
     "@types/node": "^8.9.1",
     "@types/sequelize": "^4.27.5",
     "@types/waterline": "^0.11.2",
+    "concurrently": "^3.5.1",
     "continuation-local-storage": "^3.2.1",
     "ejs": "^2.5.7",
     "glob": "^7.1.2",
@@ -27,8 +28,7 @@
     "typescript": "^2.7.1"
   },
   "scripts": {
-    "compile": "tsc --skipLibCheck && node app.js",
-    "dev": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"npm run compile\""
+    "start": "concurrently --kill-others \"tsc --watch --skipLibCheck\" \"nodemon app.js\""
   },
   "main": "app.js",
   "repository": {
