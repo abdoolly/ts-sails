@@ -28,6 +28,9 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
 
+  /**
+   * sails option that is not used anymore
+   */
   migrate: 'safe',
 
   /**

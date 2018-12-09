@@ -5,9 +5,7 @@ import { Model } from 'sequelize';
 declare global {
 
     var sails: sails;
-    var req: Request;
     var next: Function;
-    var res: Response;
 
     export interface sails extends EventEmitter {
         config: config;
@@ -211,12 +209,18 @@ declare global {
         [key: string]: any;
     }
 
-    interface SequelizeModel extends Model<any, any> {
+    interface SequelizeModel<T, Y> extends Model<T, Y> {
         [key: string]: any;
     }
 
 
-    var User: SequelizeModel;
+    export interface User {
+        id: number;
+        name: string;
+        createdAt: string;
+        updatedAt: string;
+    }
+    var User: SequelizeModel<User, User>;
     //<models here>
 
     var ExampleService: Exampleservice;
